@@ -1,0 +1,90 @@
+.material_card {
+  color: $fg_dark_main_color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.material_card.material_horizontal {
+  flex-direction: row;
+}
+
+.material_card h2 {
+  font-weight: 300;
+}
+
+
+.material_card-thumnail > .material_card-title  {
+  align-self: flex-end;
+}
+
+.material_card-title.hovering-video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.material_card-thumnail > .material_card-title > h2  {
+  color: white;
+  margin: 10px 0px 10px 10px;
+}
+
+.material_card > .material_card-thumnail {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+}
+.material_card.material_horizontal > .material_card-thumnail {
+  width: 30%;
+  flex-shrink: 0;
+}
+
+.material_card > .material_card-thumnail > .player {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.material_card > .material_card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-item: stretch;
+}
+
+.material_card-content > .material_card-title > h2 {
+  margin: 10px 0px 0px 10px;
+}
+
+.material_card-content > .material_card-excerpt {
+  flex-grow: 1;
+  padding: 10px 0px 10px 10px;
+}
+
+.material_card-content > .material_card-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.material_card-footer > .material_card-spacer {
+  flex-grow: 1;
+}
+
+.material_card-footer > .material_card-readMore {
+  text-decoration: none;
+  font-weight: 500;
+  flex-shrink: 0;
+  padding: 5px;
+  margin: 5px;
+}
