@@ -43,6 +43,7 @@
       min-height: 0!important;
       height: 0!important;
       padding-bottom: 56.25%;
+      width: 100%;//enforce header/player on top
       .player {
         position: absolute;
         top: 0;
