@@ -1,5 +1,5 @@
 (function() {
-  $('.material_card-thumbnail.video').each(function() {
+  $('.material_card-thumbnail .video').each(function() {
     var $this = $(this)
 
     var youtubeId = $this.data('youtubeid');
@@ -11,7 +11,6 @@
       'background-repeat':'no-repeat'
       });
 
-    //replace placeholder image by play icon
     var frame = $(this);
     $('<div class="material_card-play-icon material-icons">&#xE039;</div>').appendTo($(this)).one('click',function() {
       // we assume youtube API is ready
